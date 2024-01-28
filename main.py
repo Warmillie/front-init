@@ -44,7 +44,7 @@ class Framework(BaseHTTPRequestHandler):
         client_socket.close()
 
         self.send_response(302)
-        self.send_header('Location', '/contact')
+        self.send_header('Location', '/message')
         self.end_headers()
 
     def send_html(self, filename, status_code=200):
